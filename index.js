@@ -14,19 +14,6 @@ let alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
 
 
 let passEl = document.getElementById("password")
-/*
-function getNumber() {
-    let passLength = document.getElementById("pass-length").value 
-    console.log(passLength)
-    if (passLength === "") {
-        passEl.textContent = "Oops! Please enter the number of characters."
-    } else if (passLength % 1 != 0 || passLength <= 0) {
-        passEl.textContent = "Oops! The number of characters needs to be a whole number greater than 0."
-    } else {
-        createPassword(passLength)
-    }
-}
-    */
 
 function findChecks() {
     let checked = document.querySelectorAll('input[type="checkbox"]:checked');
