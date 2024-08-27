@@ -16,9 +16,9 @@ h1 {
 
 .input-section{
     background-color: #FAF9F6;
-    height: 520px;
-    width: 1000px;
-    padding: 20px 20px 40px 20px;
+    height: 550px;
+    width: 1060px;
+    padding: 10px 20px 80px 20px;
     display: block;
     margin: 70px auto;
     border-radius: 20px;
@@ -74,8 +74,8 @@ input[type=checkbox]
 }
 
 .container-generator {
-    width: 400px;
-    /*border: 1px solid black;*/
+    width: 440px;
+   /* border: 1px solid black;*/
     text-align: center;
     margin-right: 40px;
 }
@@ -112,8 +112,8 @@ h2 {
 }
 
 .container-password {
-    width: 370px;
-    height: 130px;
+    width: 400px;
+    height: 200px;
     border: 2px solid #08050c;
     display: block;
     margin-left: auto;
@@ -122,15 +122,15 @@ h2 {
     margin-bottom: 10px;
     border-radius: 10px;
     color: #ba181b;
+    padding: 15px;
     vertical-align: middle;
     word-break: break-word;
-    padding: 15px;
     line-height: 32px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 #password {
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0;
     color: #008000;
 }

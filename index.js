@@ -38,40 +38,39 @@ function createPassword() {
     let passLength = document.getElementById("pass-length").value 
     console.log(passLength)
 
+    checked = findChecks()
+    // reset character set
+    charSet = []
+    charSet = charSet.concat(alphaLower)
+
+    // add special characters if box checked
+    if (checked.includes("spec-char")) {
+        charSet = charSet.concat(specChar)
+    }
+    // add numbers if numeric characters picked
+    if (checked.includes("num-char")) {
+        charSet = charSet.concat(numbers)
+    }
+    // add uppercase letters if numeric characters picked
+    if (checked.includes("up-char")) {
+        charSet = charSet.concat(alphaUpper)
+    }
+
     if (passLength === "") {
         errorEl.textContent = "Oops! Please enter the number of characters."
-    } else if (passLength % 1 != 0 || passLength <= 0 || passLength > 100) {
-        errorEl.textContent = "Oops! The number of characters has to be a whole number greater than 0 and less than or equal to 100."
-    } else {
-        checked = findChecks()
-        // reset character set
-        charSet = []
-        charSet = charSet.concat(alphaLower)
+    } else if (passLength % 1 != 0 || passLength <= 0 || passLength > charSet.length) {
+        errorEl.textContent = 
+        "Oops! The number of characters has to be a whole number greater than 0 and less than or equal to " 
+        + charSet.length + "."
+    } else {       
         // reset password
         password = ""
-        console.log("Hello")
         
-        // add special characters if box checked
-        if (checked.includes("spec-char")) {
-            charSet = charSet.concat(specChar)
-        }
-
-        // add numbers if numeric characters picked
-        if (checked.includes("num-char")) {
-            charSet = charSet.concat(numbers)
-        }
-
-        if (checked.includes("up-char")) {
-            charSet = charSet.concat(alphaUpper)
-        }
-        console.log(charSet.length)
         // create password
         for (let i = 0; i < passLength; i++) {
             let randInd = Math.floor(Math.random() * charSet.length)
             password += charSet[randInd]
-            console.log(charSet[randInd])
             charSet.splice(randInd,1)
-            console.log(charSet.length)
         }
 
         passEl.textContent = password
