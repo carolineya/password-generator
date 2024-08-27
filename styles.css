@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #08050c;
+    font-size: 28px;
+    background-image: url("matrix.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Orbitron, sans-serif;
+    margin-bottom: 50px;
+}
+
+.input-section{
+    background-color: #FAF9F6;
+    height: 520px;
+    width: 1000px;
+    padding: 20px 20px 40px 20px;
+    display: block;
+    margin: 100px auto;
+    border-radius: 20px;
+    border: 10px solid #08050c;
+}
+
+#pass-length {
+    height: 30px;
+    width: 70px;
+    font-size: 28px;
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  border: 2px solid #6c757d;
+  margin-left: 15px;
+}
+
+#submit {
+    height: 50px;
+    width: 240px;
+    padding: 10px;
+    font-size: 28px;
+    border: 3px solid #08050c;
+    border-radius: 5px;
+    background-color: #ced4da;
+    line-height: 28px;
+    font-family: Orbitron, sans-serif;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: #adb5bd;
+    border: 4px solid #08050c;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-generator {
+    width: 400px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-right: 40px;
+}
+
+th {
+    text-align: right;
+    font-weight: lighter;
+    vertical-align: top;
+}
+
+td {
+    text-align: left;
+    width: 150px;
+}
+
+
+.extra-char {
+    font-weight: bold;
+    text-align: left;
+}
+
+
+table {
+    margin-left: 30px;
+    /*border: 1px solid black;*/
+  }
+
+h2 {
+    font-family: Orbitron, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.container-password {
+    width: 350px;
+    height: 200px;
+    border: 2px solid #08050c;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    color: #ba181b;
+    vertical-align: middle;
+    word-break: break-word;
+    padding: 15px;
+    line-height: 32px;
+}
+
+#password {
+    font-size: 32px;
+    margin-top: 0;
+}
