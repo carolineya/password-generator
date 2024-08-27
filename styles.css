@@ -112,23 +112,34 @@ h2 {
 }
 
 .container-password {
-    width: 350px;
-    height: 200px;
+    width: 370px;
+    height: 130px;
     border: 2px solid #08050c;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border-radius: 10px;
     color: #ba181b;
     vertical-align: middle;
     word-break: break-word;
     padding: 15px;
     line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #password {
     font-size: 32px;
+    margin-top: 0;
+    color: #008000;
+}
+
+#strength-text {
+    font-style: italic;
+}
+
+#error {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 0;
 }
