@@ -123,6 +123,12 @@ td {
     text-align: center;
 }
 
+.password-copy {
+    width: 400px;
+    display: flex;
+
+}
+
 #password {
     font-size: 22px;
     margin-top: 0;
