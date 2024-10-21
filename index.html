@@ -4,44 +4,63 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="input-section">
-            <h1>PASSWORD GENERATOR</h1>
-                <div class="container-form">
-                    <div>
-                        <table>
-                            <tr>
-                                <th><label for="pass-length">Number of Characters:</label></th>
-                                <td><input type="text" id="pass-length" name="pass-length"><br><br></td>
-                            </tr>
-                            <tr>
-                                <th><label for="spec-char">Allow Special Characters:</label></th>
-                                <td><input type="checkbox" id="spec-char" name="spec-char"><br><br></td>
-                            </tr>
-                            <tr>
-                                <th><label for="num-char">Allow Numeric Characters:</label></th>
-                                <td><input type="checkbox" id="num-char" name="num-char"><br><br></td>
-                            </tr>
-                            <tr>
-                                <th><label for="up-char">Allow Uppercase Characters:</label></th>
-                                <td><input type="checkbox" id="up-char" name="up-char"><br><br></td>
-                            </tr>
-                        </table> 
-                    </div>
-                    <div class="container-generator">
-                        <input type="submit" id="submit" name="submit" value="GENERATE!" onclick="clearMessage()">
-                        <h2>PASSWORD:</h2>
-                        <div class="container-password">
-                            <span id="error"></span>
-                            <span id="password"></span>
-                        </div>
-                    </div>
-                </div>
-                <p id="strength-text">...Curious how strong your password is?  Copy and paste it  
-                    <a href="https://www.uic.edu/apps/strong-password/" target="_blank">here</a>.</p>
-        </div>  
+        <div id="header">
+            <h1>Generate a</h1>
+            <h1 class="green-font-header">random password</h1>
+            <h2>Never use an insecure password again.</h2>
+        </div>
+
+        <table>
+            <tr>
+                <th><input type="text" id="pass-length" name="pass-length"><br><br></th>
+                <td><label for="pass-length">Number of Characters</label></td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" id="spec-char" name="spec-char"><br><br></th>
+                <td><label for="spec-char">Allow Special Characters</label></td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" id="num-char" name="num-char"><br><br></th>
+                <td><label for="num-char">Allow Numeric Characters</label></td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" id="up-char" name="up-char"><br><br></th>
+                <td><label for="up-char">Allow Uppercase Characters</label></td>
+            </tr>
+        </table> 
+
+        <input type="submit" id="submit" name="submit" value="Generate password" onclick="clearMessage()">
+        
+        <hr>
+
+        <div class="password-return">
+            <div class="container-password">
+                <span id="password"></span>
+            </div>
+
+            <button id="copy-btn" onclick="copyPassword()">
+                <i class="fa fa-copy" style="font-size:24px;color:#4ADF86"></i>
+            </button>
+    
+            <div class="container-error">
+                <span id="error"></span>
+            </div>
+        </div>
+        
+
+        <p id="strength-text">...curious how strong your password is?  Copy and paste it  
+            <a href="https://www.uic.edu/apps/strong-password/" target="_blank">here</a>.</p>
+
+        
         <script src="index.js"></script>    
     </body>
 </html>
